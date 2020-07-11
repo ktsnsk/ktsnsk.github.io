@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="https://nvsk.znavesov.ru/favicon.png">
+        <title>Каталог навесов | Завод Навесов - Завод Навесов</title>
+    </head>
+    <body>
+        <div id="call-menu" style="position: fixed; background-color: rgba(1,1,1, 0.5); width: 100%; height: 1200px; z-index: 10;">
+            <div style="position: fixed; display: grid; background-color: white; padding: 30px; border-radius: 10px; z-index: 11;">
+                <div class="text-center pad-t-20 f-size-20"><b>Заказать звонок</b></div>
+                <div class="text-center pad-t-20"><p>Оставьте заявку и наш менеджер перезвонит Вам!</p></div>
+                <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case btn-nactive" placeholder="ваше имя" type="text"></div>
+                <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case btn-nactive" placeholder="ваш телефон" type="text"></div>
+                <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case" type="button" value="заказать звонок"></div>
+                <div class="just-center pad-t-20"><input type="checkbox"><span>Я согласен(а) с условиями передачи информации</span></div>
+            </div>
+        </div>
+        <div id="scroll-head" style="position: fixed; width: 100%; background-color: white; display: none; opacity: 0; transition: 0.3s; z-index: 1000;">
+            <div class="center-70 pad-t-10 pad-b-10">
+                <div id="scroll-head" style="display: grid;">
+                    <div>
+                        <div class="btn d-inline up-case form">Заказать звонок</div>
+                        <a href="price.html"><div class="btn d-inline up-case">Калькулятор</div></a>
+                    </div>
+                    <div id="scroll-call" class="just-end">
+                        <a href="tel:+73832841112" >
+                            <div style="display: grid; grid-template-columns: auto auto; grid-gap: 30px;">
+                                <div style="justify-self: end; align-self: center;">
+                                    <img src="https://nvsk.znavesov.ru/img/phone.svg" style="width: 30px;">
+                                </div>
+                                <div>
+                                    <div class="f-size-36"><b>+7 (383) 284-11-12</b></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="head">
+            <div id="head-top" class="center-70" style="padding-top: 30px;">
+                <a href="index.html">
+                    <div style="display: grid; grid-template-columns: auto auto; justify-content: start; grid-gap: 60px;">
+                        <div><img src="https://nvsk.znavesov.ru/img/logo.png" alt=""></div>
+                        <div style="align-self: center;">Изготовление и монтаж<br>металлоконструкций любой сложности<br>в Новосибирске и области</div>
+                    </div>
+                </a>
+                <div id="head-call">
+                    <div>
+                        <a href="tel:+73832841112" >
+                            <div style="display: grid; grid-template-columns: auto auto; grid-gap: 30px;">
+                                <div style="justify-self: end; align-self: center;">
+                                    <img src="https://nvsk.znavesov.ru/img/phone.svg" style="width: 30px;">
+                                </div>
+                                <div>
+                                    <div>Новосибирск</div>
+                                    <div class="f-size-36"><b>+7 (383) 284-11-12</b></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="btn-list">
+                        <div class="btn d-inline up-case form">Заказать звонок</div>
+                        <a href="price.html"><div class="btn d-inline up-case">Калькулятор</div></a>
+                    </div>
+                </div>
+            </div>
+            <div id="head-bot">
+                <div class="center-70">
+                    <div class="up-case d-inline"><a class="white-text" href="catalog.html">каталог металлоконструкций</a></div>
+                    <div class="up-case d-inline"><a class="white-text" href="price.html">цены на металлоконструкции</a></div>
+                    <div class="up-case d-inline"><a class="white-text" href="works.html">наши работы</a></div>
+                    <div class="up-case d-inline"><a class="white-text" href="thank.html">отзывы</a></div>
+                    <div class="up-case d-inline"><a class="white-text" href="contacts.html">контакты</a></div>
+                    <div class="phone" class="up-case d-inline"><b>+7 (383) 284-11-12</b></div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="center-70">
+                <div class="g-main">
+                    <div style="font-size: 44px; font-weight: 700; line-height: 58px; padding-top: 50px;" class="white-text">Делаем и устанавливаем металлоконструкции<br>любой сложности под ключ<br>с гарантией до 15 лет<br></div>
+                    <div id="wh" class="d-inline">Выезд замерщика в день обращения!</div>
+                    <div class="white-text" style="font-size: 22px; display: grid; grid-template-columns: 1fr 1fr 1fr;">
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Навесы</b><br>от 2 800 Р/шт
+                        </div>
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Беседки</b><br>от 2 500 Р/шт
+                        </div>
+
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Калитки</b><br>от 4 000 Р за 1,1 метр в длину
+                        </div>
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Забор</b><br>от 1 600 Р/пм
+                        </div>
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Ворота распашные</b><br>3м от 15 000 Р
+                        </div>
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>3D забор</b><br>от 1 000 Р/пм
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="calc">
+                        <div class="calc-top white-text">
+                            <p class="text-center f-size-20" style="padding: 15px;">Получите <b class="yellow-text">ТОЧНЫЙ РАСЧЕТ</b> навеса</p>
+                            <p class="f-size-18" style="padding-bottom: 15px;">1. Оставьте свой номер телефона и наш специалист свяжется с Вами в течение 45 минут</p>
+                            <input style="justify-self: center; width: 100%;" type="text" placeholder="ВАШ ТЕЛЕФОН" class="bg-white btn d-inline up-case bordern">
+                            <div class="calc-option">
+                                <div class="option">
+                                    <div class="just-end"><div style="text-align: end;" class="pad-b-10">Длина: </div><input style="width: 100%;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                                </div>
+                                <div class="option">
+                                    <div class="just-end"><div style="text-align: end;" class="pad-b-10">Ширина: </div> <input style="width: 100%;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                                </div>
+                                <div class="option">
+                                    <div class="just-end"><div style="text-align: end;" class="pad-b-10">Высота: </div> <input style="width: 100%;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                                </div>
+                                <div class="option">
+                                    <div class="just-end"><div style="text-align: end;" class="pad-b-10">Крыша: </div>
+                                    <select class="btn bg-white bordern" style="width: 100%;">
+                                        <option value="поликарбонат">поликарбонат</option>
+                                        <option value="черепица">черепица</option>
+                                        <option value="мягкая кровля">мягкая кровля</option>
+                                        <option value="металлочерепица">металлочерепица</option>
+                                    </select>
+                                </div></div>
+                            </div>
+                            <input style="justify-self: center; margin-top: 30px; width: 100%;" type="button" value="ПОЛУЧИТЬ ПРОЕКТ И РАСЧЁТ" class="btn d-inline up-case">
+                        </div>
+                        <div class="calc-bot">
+                            <p class="f-size-18" style="padding-bottom: 15px;">2. <b class="red-text">БЕСПЛАТНО</b> к вам приедет инженер для уточнения конструкции и цвета навеса</p>
+                            <p class="f-size-18" style="padding-bottom: 15px;">3. <b class="red-text">БЕСПЛАТНО</b> отправим Вам наше коммерческое предложение с детальной сметой, 3D эскизов и стоимостью</p>
+                            <input type="checkbox"><span>Я согласен(а) с условиями передачи информации</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="produce">
+            <div class="center-70">
+                <h1 class="up-case text-center" style="margin-top: 50px; margin-bottom: 50px;">мы производим</h1>
+                <div id="produce-block" style="display: grid; grid-gap: 65px;">
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in1.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Навесы <span class="yellow-text">для авто</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 39 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in2.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Навесы <span class="yellow-text">для дачи</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 23 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in3.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Навесы <span class="yellow-text">к дому</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 31 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in4.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Навесы <span class="yellow-text">для бассейна</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price form">
+                            <b>От 27 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in5.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b><span class="yellow-text">Беседки</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 18 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in6.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b><span class="yellow-text">Козырьки</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 15 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in7.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Навесы <span class="yellow-text">для мангала</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 5 320 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in8.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Навесы <span class="yellow-text">для барбекю</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 12 710 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in9.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Навесы <span class="yellow-text">для беседки</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 17 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in10.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Качели <span class="yellow-text">с навесом</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 27 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://nvsk.znavesov.ru/img/made/in11.jpg')" class="produce-img">
+                            <div class="produce-text">
+                                <b>Навесы <span class="yellow-text">и террасы под ключ</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 18 840 ₽</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                    <div class="produce-element">
+                        <div style="background: url('https://apf.mail.ru/cgi-bin/readmsg?id=15935386852031675175;0;26&exif=1&full=1&x-email=syvs0990%40mail.ru')  center no-repeat; background-size: cover;" class="produce-img">
+                            <div class="produce-text">
+                                <b><span class="yellow-text">Заборы и ограждения</span></b>
+                            </div>
+                        </div>
+                        <div class="just-center produce-price">
+                            <b>От 1 600 ₽/м</b>
+                        </div>
+                        <div class="just-center">
+                            <input type="button" class="btn up-case form" value="рассчитать стоимость">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="design-block" class="center-70" style="display: grid; padding-bottom: 50px;">
+                <p class="text-center" style="font-size: 36px; padding-top: 50px; padding-bottom: 40px;"><b>Примеры стоимости "под ключ" типовых навесов</b></p>
+                <div class="just-center" style="padding-bottom: 50px;">
+                    <div class="rbtn btn up-case cursor">для одного автомобиля</div>
+                    <div class="rbtn btn up-case cursor btn-nactive">для двух автомобилей</div>
+                    <div class="rbtn btn up-case cursor btn-nactive">козырьки и беседки</div>
+                </div>
+                <div class="design-block" id="ex-1" style="display: grid; grid-gap: 70px;">
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1430</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/1.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>3 метра</b></p>
+                            <p>- Длина: <b>4 метра</b></p>
+                            <p>- Высота: <b>2,4 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 33 870 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1630</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/2.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>3 метра</b></p>
+                            <p>- Длина: <b>6 метров</b></p>
+                            <p>- Высота: <b>2,4 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 50 420 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1435</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/3.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>3,5 метра</b></p>
+                            <p>- Длина: <b>4 метра</b></p>
+                            <p>- Высота: <b>2,4 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 38 220 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1635</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/4.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>3,5 метра</b></p>
+                            <p>- Длина: <b>6 метров</b></p>
+                            <p>- Высота: <b>2,2 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 56 870 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1440</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/5.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>4 метра</b></p>
+                            <p>- Длина: <b>3,9 метров</b></p>
+                            <p>- Высота: <b>2,2 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 43 640 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1640</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/6.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>4 метра</b></p>
+                            <p>- Длина: <b>6 метров</b></p>
+                            <p>- Высота: <b>2,2 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 67 680 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                </div>
+                <div class="design-block" id="ex-2" style="display: none; grid-gap: 70px;">
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1830</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/7.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>3 метра</b></p>
+                            <p>- Длина: <b>8 метров</b></p>
+                            <p>- Высота: <b>2,4 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 68 880 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1835</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/8.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>3,5 метра</b></p>
+                            <p>- Длина: <b>8 метров</b></p>
+                            <p>- Высота: <b>2,4 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 80 360 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1840</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/9.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>4 метра</b></p>
+                            <p>- Длина: <b>8 метров</b></p>
+                            <p>- Высота: <b>2,4 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 91 840 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1450</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/10.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>4 метра</b></p>
+                            <p>- Длина: <b>5 метров</b></p>
+                            <p>- Высота: <b>2,2 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 56 870 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1650</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/11.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>5 метров</b></p>
+                            <p>- Длина: <b>6 метров</b></p>
+                            <p>- Высота: <b>2,2 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 83 640 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1850</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/12.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>5 метров</b></p>
+                            <p>- Длина: <b>8 метров</b></p>
+                            <p>- Высота: <b>2,2 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 114 680 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                </div>
+                <div class="design-block" id="ex-3" style="display: none; grid-gap: 70px;">
+                    <div style="display: grid;">
+                        <div class="text-center pad-b-20"><b>НАВЕС Н-1450</b></div>
+                        <div class="pad-b-20"><img src="https://nvsk.znavesov.ru/images/stoim/10.png" style="width: 100%;"></div>
+                        <div class="just-center pad-b-20">
+                            <p>- Ширина: <b>4 метра</b></p>
+                            <p>- Длина: <b>5 метров</b></p>
+                            <p>- Высота: <b>2,4 метра</b></p>
+                            <p>- Тип: <b>арочная</b></p>
+                            <p class="pad-b-10">- Покрытие: <b>поликарбонат</b></p>
+                            <b>Цена под ключ: 54 580 Р</b>
+                        </div>
+                        <div class="just-center">
+                            <input class="btn up-case form" type="button" value="заказать монтаж">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #f3f3f4;">
+            <div class="center-70 pad-t-50 pad-b-50" style="padding: 50px;">
+                <div class="f-size-36 text-center"><b>Популярные дополнительные комплектующие</b></div>
+                <div style="display: grid; grid-template-rows: 250px;" class="mar-t-30 borderr-10 bg-white popular-block">
+                    <div style="border-radius: 10px 0px 0px 10px; background-image: url('https://nvsk.znavesov.ru/img/dop/kovanie_elementi_navesa.jpg'); background-size: cover;"></div>
+                    <div style="padding: 30px;">
+                        <b class="f-size-20">Кованые элементы</b>
+                        <p class="f-size-18 pad-t-20">Вензеля +3 000 ₽/кв.м</p>
+                        <p class="f-size-18 pad-t-10">Декоративные эл-ты +3 000 ₽/кв.м</p>
+                        <p class="f-size-18 pad-t-10">Декоративные панели +3 000 ₽/кв.м</p>
+                    </div>
+                    <div style="padding: 30px;">
+                        <div class="f-size-20 text-center"><b>От 3 000 ₽/м2</b></div>
+                        <div class="f-size-18 pad-t-20" style="display: grid; grid-template-columns: auto auto;">
+                            <div><img src="https://nvsk.znavesov.ru/img/ica/002-settings.svg" style="width: 20px;"></div>
+                            <div><p>С установкой</p></div>
+                        </div>
+                        <div class="f-size-18 pad-t-10" style="display: grid; grid-template-columns: auto auto;">
+                            <div><img src="https://nvsk.znavesov.ru/img/ica/001-coins.svg" style="width: 20px;"></div>
+                            <div><p>Бесплатный сервис</p></div>
+                        </div>
+                        <div class="pad-t-10"><input class="btn up-case" style="width: 100%;" type="button" value="заказать"></div>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-rows: 250px;" class="mar-t-30 borderr-10 bg-white popular-block">
+                    <div style="border-radius: 10px 0px 0px 10px; background-image: url('https://nvsk.znavesov.ru/img/dop/bokovaya_obshivka_navesa.jpg'); background-size: cover;"></div>
+                    <div style="padding: 30px;">
+                        <b class="f-size-20">Боковая обшивка навеса</b>
+                        <p class="f-size-18 pad-t-20">Обрешетка из металла +500 ₽/кв.м</p>
+                        <p class="f-size-18 pad-t-10">СПК 6 мм +400 ₽/кв.м</p>
+                        <p class="f-size-18 pad-t-10">СПК 8 мм +500 ₽/кв.м</p>
+                    </div>
+                    <div style="padding: 30px;">
+                        <div class="f-size-20 text-center"><b>От 400 ₽/м2</b></div>
+                        <div class="f-size-18 pad-t-20" style="display: grid; grid-template-columns: auto auto;">
+                            <div><img src="https://nvsk.znavesov.ru/img/ica/002-settings.svg" style="width: 20px;"></div>
+                            <div><p>С установкой</p></div>
+                        </div>
+                        <div class="f-size-18 pad-t-10" style="display: grid; grid-template-columns: auto auto;">
+                            <div><img src="https://nvsk.znavesov.ru/img/ica/001-coins.svg" style="width: 20px;"></div>
+                            <div><p>Бесплатный сервис</p></div>
+                        </div>
+                        <div class="pad-t-10"><input class="btn up-case form" style="width: 100%;" type="button" value="заказать"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wwork" style="background-color: #def6fe;">
+            <div id="work-block" class="center-70">
+                <h1 style="font-size: 32px; padding-top: 50px; padding-bottom: 30px;" class="text-center">Посмотрите на навесы, которые мы построили</h1>
+                <div class="look-2">
+                    <div class="work-main">
+                        <div class="work-4 work-images" style="background: url('https://nvsk.znavesov.ru/images/naves/1.jpg'); background-size: cover;"></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/2.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/3.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/4.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/5.jpg'); background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><h2>Навес 10,5х6 метров в Новосибирске</h2></div>
+                        <div class="m-top">
+                            <b>Задача:</b>
+                            <p>сделать навес на 4 автомобиля для хозяев и гостей дома</p>
+                        </div>
+                        <div class="m-top">
+                            <b>Характеристики:</b>
+                            <p>Опорные столбы Навеса из трубы 100х100х4мм - 6 шт, высота 2,4 м Столбы заглублены на 70 см + бетонирование</p>
+                        </div>
+                        <div class="m-top"><p>По фасаду - 4 несущие фермы 10300х250 мм, из трубы 40х40х2мм с перемычками 40х20х2мм и креплением сваркой</p></div>
+                        <div class="m-top"><p>С тыла были установлены арочные фермы из трубы 40х20х2мм</p></div>
+                        <div class="m-top"><p>Материал кровли - сотовый поликарбонат (СПК) - 10 мм POLYGAL цвета "Янтарь"</p></div>
+                        <div class="m-top b-w-20">
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/0.svg" alt=""></div>
+                                <div><b>Материалы:<br>186 000 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/2.svg" alt=""></div>
+                                <div><b>Работа:<br>34 600 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/1.svg" alt=""></div>
+                                <div><b>Итого:<br>210 600 руб.</b></div>
+                            </div>
+                        </div>
+                        <input type="button" style="width: 100%" class="btn up-case m-top form" value="узнать стоимость вашего навеса">
+                    </div>
+                </div>
+                <div class="look-2">
+                    <div class="work-main">
+                        <div class="work-4 work-images" style="background: url('https://nvsk.znavesov.ru/images/naves/6.jpg'); background-size: cover;"></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/7.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/8.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/9.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/10.jpg'); background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><h2>Навес 10,5х6 метров в Новосибирске</h2></div>
+                        <div class="m-top">
+                            <b>Задача:</b>
+                            <p>сделать навес на 4 автомобиля для хозяев и гостей дома</p>
+                        </div>
+                        <div class="m-top">
+                            <b>Характеристики:</b>
+                            <p>Опорные столбы Навеса из трубы 100х100х4мм - 6 шт, высота 2,4 м Столбы заглублены на 70 см + бетонирование</p>
+                        </div>
+                        <div class="m-top"><p>По фасаду - 4 несущие фермы 10300х250 мм, из трубы 40х40х2мм с перемычками 40х20х2мм и креплением сваркой</p></div>
+                        <div class="m-top"><p>С тыла были установлены арочные фермы из трубы 40х20х2мм</p></div>
+                        <div class="m-top"><p>Материал кровли - сотовый поликарбонат (СПК) - 10 мм POLYGAL цвета "Янтарь"</p></div>
+                        <div class="m-top b-w-20">
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/0.svg" alt=""></div>
+                                <div><b>Материалы:<br>81 000 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/2.svg" alt=""></div>
+                                <div><b>Работа:<br>14 600 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/1.svg" alt=""></div>
+                                <div><b>Итого:<br>95 600 руб.</b></div>
+                            </div>
+                        </div>
+                        <input type="button" style="width: 100%" class="btn up-case m-top form" value="узнать стоимость вашего навеса">
+                    </div>
+                </div>
+                <div class="look-2">
+                    <div class="work-main">
+                        <div class="work-4 work-images" style="background: url('https://nvsk.znavesov.ru/images/naves/11.jpg'); background-size: cover;"></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/12.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/13.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/14.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/15.jpg'); background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><h2>Навес 10,5х6 метров в Новосибирске</h2></div>
+                        <div class="m-top">
+                            <b>Задача:</b>
+                            <p>сделать навес на 4 автомобиля для хозяев и гостей дома</p>
+                        </div>
+                        <div class="m-top">
+                            <b>Характеристики:</b>
+                            <p>Опорные столбы Навеса из трубы 100х100х4мм - 6 шт, высота 2,4 м Столбы заглублены на 70 см + бетонирование</p>
+                        </div>
+                        <div class="m-top"><p>По фасаду - 4 несущие фермы 10300х250 мм, из трубы 40х40х2мм с перемычками 40х20х2мм и креплением сваркой</p></div>
+                        <div class="m-top"><p>С тыла были установлены арочные фермы из трубы 40х20х2мм</p></div>
+                        <div class="m-top"><p>Материал кровли - сотовый поликарбонат (СПК) - 10 мм POLYGAL цвета "Янтарь"</p></div>
+                        <div class="m-top b-w-20">
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/0.svg" alt=""></div>
+                                <div><b>Материалы:<br>133 000 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/2.svg" alt=""></div>
+                                <div><b>Работа:<br>52 600 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/1.svg" alt=""></div>
+                                <div><b>Итого:<br>185 600 руб.</b></div>
+                            </div>
+                        </div>
+                        <input type="button" style="width: 100%" class="btn up-case m-top form" value="узнать стоимость вашего навеса">
+                    </div>
+                </div>
+                <div class="look-2">
+                    <div class="work-main">
+                        <div class="work-4 work-images" style="background: url('https://nvsk.znavesov.ru/images/naves/16.jpg'); background-size: cover;"></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/17.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/18.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/19.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/20.jpg'); background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><h2>Навес 10,5х6 метров в Новосибирске</h2></div>
+                        <div class="m-top">
+                            <b>Задача:</b>
+                            <p>сделать навес на 4 автомобиля для хозяев и гостей дома</p>
+                        </div>
+                        <div class="m-top">
+                            <b>Характеристики:</b>
+                            <p>Опорные столбы Навеса из трубы 100х100х4мм - 6 шт, высота 2,4 м Столбы заглублены на 70 см + бетонирование</p>
+                        </div>
+                        <div class="m-top"><p>По фасаду - 4 несущие фермы 10300х250 мм, из трубы 40х40х2мм с перемычками 40х20х2мм и креплением сваркой</p></div>
+                        <div class="m-top"><p>С тыла были установлены арочные фермы из трубы 40х20х2мм</p></div>
+                        <div class="m-top"><p>Материал кровли - сотовый поликарбонат (СПК) - 10 мм POLYGAL цвета "Янтарь"</p></div>
+                        <div class="m-top b-w-20">
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/0.svg" alt=""></div>
+                                <div><b>Материалы:<br>196 000 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/2.svg" alt=""></div>
+                                <div><b>Работа:<br>44 600 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/1.svg" alt=""></div>
+                                <div><b>Итого:<br>240 600 руб.</b></div>
+                            </div>
+                        </div>
+                        <input type="button" style="width: 100%" class="btn up-case m-top form" value="узнать стоимость вашего навеса">
+                    </div>
+                </div>
+                <div class="look-2">
+                    <div class="work-main">
+                        <div class="work-4 work-images" style="background: url('https://nvsk.znavesov.ru/images/naves/21.jpg'); background-size: cover;"></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/22.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/23.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/24.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/25.jpg'); background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><h2>Навес 10,5х6 метров в Новосибирске</h2></div>
+                        <div class="m-top">
+                            <b>Задача:</b>
+                            <p>сделать навес на 4 автомобиля для хозяев и гостей дома</p>
+                        </div>
+                        <div class="m-top">
+                            <b>Характеристики:</b>
+                            <p>Опорные столбы Навеса из трубы 100х100х4мм - 6 шт, высота 2,4 м Столбы заглублены на 70 см + бетонирование</p>
+                        </div>
+                        <div class="m-top"><p>По фасаду - 4 несущие фермы 10300х250 мм, из трубы 40х40х2мм с перемычками 40х20х2мм и креплением сваркой</p></div>
+                        <div class="m-top"><p>С тыла были установлены арочные фермы из трубы 40х20х2мм</p></div>
+                        <div class="m-top"><p>Материал кровли - сотовый поликарбонат (СПК) - 10 мм POLYGAL цвета "Янтарь"</p></div>
+                        <div class="m-top b-w-20">
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/0.svg" alt=""></div>
+                                <div><b>Материалы:<br>216 000 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/2.svg" alt=""></div>
+                                <div><b>Работа:<br>36 600 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/1.svg" alt=""></div>
+                                <div><b>Итого:<br>252 600 руб.</b></div>
+                            </div>
+                        </div>
+                        <input type="button" style="width: 100%" class="btn up-case m-top form" value="узнать стоимость вашего навеса">
+                    </div>
+                </div>
+                <div class="look-2">
+                    <div class="work-main">
+                        <div class="work-4 work-images" style="background: url('https://nvsk.znavesov.ru/images/naves/26.jpg'); background-size: cover;"></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/27.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/28.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/29.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/30.jpg'); background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><h2>Навес 10,5х6 метров в Новосибирске</h2></div>
+                        <div class="m-top">
+                            <b>Задача:</b>
+                            <p>сделать навес на 4 автомобиля для хозяев и гостей дома</p>
+                        </div>
+                        <div class="m-top">
+                            <b>Характеристики:</b>
+                            <p>Опорные столбы Навеса из трубы 100х100х4мм - 6 шт, высота 2,4 м Столбы заглублены на 70 см + бетонирование</p>
+                        </div>
+                        <div class="m-top"><p>По фасаду - 4 несущие фермы 10300х250 мм, из трубы 40х40х2мм с перемычками 40х20х2мм и креплением сваркой</p></div>
+                        <div class="m-top"><p>С тыла были установлены арочные фермы из трубы 40х20х2мм</p></div>
+                        <div class="m-top"><p>Материал кровли - сотовый поликарбонат (СПК) - 10 мм POLYGAL цвета "Янтарь"</p></div>
+                        <div class="m-top b-w-20">
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/0.svg" alt=""></div>
+                                <div><b>Материалы:<br>43 000 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/2.svg" alt=""></div>
+                                <div><b>Работа:<br>14 600 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/1.svg" alt=""></div>
+                                <div><b>Итого:<br>57 600 руб.</b></div>
+                            </div>
+                        </div>
+                        <input type="button" style="width: 100%" class="btn up-case m-top form" value="узнать стоимость вашего навеса">
+                    </div>
+                </div>
+                <div class="look-2">
+                    <div class="work-main">
+                        <div class="work-4 work-images" style="background: url('https://nvsk.znavesov.ru/images/naves/31.jpg'); background-size: cover;"></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/32.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/33.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/34.jpg'); background-size: cover;"></div>
+                            <div class="work-4" style="background: url('https://nvsk.znavesov.ru/images/naves/35.jpg'); background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><h2>Навес 10,5х6 метров в Новосибирске</h2></div>
+                        <div class="m-top">
+                            <b>Задача:</b>
+                            <p>сделать навес на 4 автомобиля для хозяев и гостей дома</p>
+                        </div>
+                        <div class="m-top">
+                            <b>Характеристики:</b>
+                            <p>Опорные столбы Навеса из трубы 100х100х4мм - 6 шт, высота 2,4 м Столбы заглублены на 70 см + бетонирование</p>
+                        </div>
+                        <div class="m-top"><p>По фасаду - 4 несущие фермы 10300х250 мм, из трубы 40х40х2мм с перемычками 40х20х2мм и креплением сваркой</p></div>
+                        <div class="m-top"><p>С тыла были установлены арочные фермы из трубы 40х20х2мм</p></div>
+                        <div class="m-top"><p>Материал кровли - сотовый поликарбонат (СПК) - 10 мм POLYGAL цвета "Янтарь"</p></div>
+                        <div class="m-top b-w-20">
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/0.svg" alt=""></div>
+                                <div><b>Материалы:<br>145 000 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/2.svg" alt=""></div>
+                                <div><b>Работа:<br>26 600 руб.</b></div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div><img class="img-35" src="https://nvsk.znavesov.ru/img/ic5/1.svg" alt=""></div>
+                                <div><b>Итого:<br>171 600 руб.</b></div>
+                            </div>
+                        </div>
+                        <input type="button" style="width: 100%" class="btn up-case m-top form" value="узнать стоимость вашего навеса">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: url('https://nvsk.znavesov.ru/img/otz.jpg'); background-size: cover;">
+            <div class="center-70 pad-t-50 pad-b-50" style="display: grid;">
+                <div class="just-center f-size-36 white-text pad-b-10 text-center"><p>Отзывы и благодарственные письма</p></div>
+                <div id="thank-block" class="pad-t-20 pad-b-20" style="display: grid; justify-content: center; grid-gap: 40px;">
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/otz/1b_chel.jpg" style="width: 100%;"></div>
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/otz/2b_chel.jpg" style="width: 100%;"></div>
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/otz/3b_chel.jpg" style="width: 100%;"></div>
+                </div>
+                <div class="just-center">
+                    <a href="thank.html"><input class="btn up-case" type="button" value="смотреть ещё отзывы"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="center-70 pad-t-50 pad-b-50" style="display: grid;">
+                <div class="just-center f-size-36 pad-b-10 text-center"><p>Сертификаты на нашу продукцию</p></div>
+                <div id="docs-block" class="pad-t-20 pad-b-20" style="display: grid; justify-content: center; grid-gap: 40px;">
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/sertif/sert1.jpg" style="width: 100%;"></div>
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/sertif/sert2.jpg" style="width: 100%;"></div>
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/sertif/sert3.jpg" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+        <div style="background: url('https://nvsk.znavesov.ru/img/quest.jpg'); background-size: cover;">
+            <div class="center-70 white-text pad-t-50 pad-b-50" style="display: grid;">
+                <div id="quest-block" class="just-center">
+                    <div class="text-center f-size-36 pad-b-20 text-center"><b>Остались вопросы?</b></div>
+                    <div class="just-center text-center pad-b-20"><p>Введите свой вопрос и через 15 минут<br>с Вами свяжется наш специалист</p></div>
+                    <div style="width: 100%;" class="just-center pad-b-20"><textarea style="resize: none; width: 100%;" class="btn bg-white bordern up-case" cols="30" rows="10" placeholder="ваш вопрос"></textarea></div>
+                    <div style="width: 100%;" class="just-center pad-b-20"><input style="width: 100%;" class="btn bg-white bordern up-case" type="text" placeholder="ваш телефон"></div>
+                    <div style="width: 100%;" class="just-center pad-b-20"><input style="width: 100%;" class="btn up-case" type="button" value="задать вопрос!"></div>
+                    <div class="just-center pad-b-20"><input type="checkbox"><span>Я согласен(а) с условиями передачи информации</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="foot" style="background-color: #1e2a3a;">
+            <div class="center-70 white-text pad-t-50 pad-b-50">
+                <div id="foot-block" style="display: grid; grid-gap: 30px;">
+                    <div>
+                        <b>ИЗГОТОВЛЕНИЕ И МОНТАЖ МЕТАЛЛОКОНСТРУКЦИЙ</b>
+                        <p class="pad-b-20 pad-t-20">ВНИМАНИЕ! ДАННЫЙ САЙТ НОСИТ ИНФОРМАЦИОННЫЙ ХАРАКТЕР И НИ ПРИ КАКИХ УСЛОВИЯХ НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ, КОТОРАЯ ОПРЕДЕЛЯЕТСЯ ПОЛОЖЕНИЯМИ СТАТЬИ 437 (2) ГРАЖДАНСКОГО КОДЕКСА РФ. ДЛЯ ПОЛУЧЕНИЯ ПОДРОБНОЙ ИНФОРМАЦИИ О НАЛИЧИИ И СТОИМОСТИ УКАЗАННЫХ ТОВАРОВ И (ИЛИ) УСЛУГ, ПОЖАЛУЙСТА, ОБРАЩАЙТЕСЬ К НАШИМ МЕНЕДЖЕРАМ. ИЛИ МЫ САМИ СВЯЖЕМСЯ С ВАМИ.</p>
+                        <p>(C) ЗАВОД НАВЕСОВ 2002 - 2018</p>
+                    </div>
+                    <div class="ln-3">
+                        <b><a href="workauto.html">ДЛЯ АВТОМОБИЛЯ</a><br>
+                        <a href="workgazebo.html">ДЛЯ БЕСЕДКИ</a><br>
+                        <a href="workmetal.html">КОВАННЫЕ НАВЕСЫ</a><br>
+                        <a href="workbarbecue.html">ДЛЯ БАРБЕКЮ</a><br>
+                        <a href="workswing.html">ДЛЯ КАЧЕЛЕЙ</a><br>
+                        <a href="workhouse.html">К ДОМУ</a><br>
+                        <a href="workterrace.html">ДЛЯ ТЕРРАСЫ</a><br>
+                        <a href="workpark.html">БЕСЕДКИ</a><br>
+                        <a href="workpool.html">ДЛЯ БАССЕЙНА</a><br>
+                        <a href="workfence.html">ОГРАЖДЕНИЯ</a></b>
+                    </div>
+                    <div class="ln-3">
+                        <b class="up-case"><a href="price.html">цены на металлоконструкции</a><br>
+                        <a href="works.html">НАШИ РАБОТЫ</a><br>
+                        <a href="thank.html">ОТЗЫВЫ</a><br>
+                        <a href="contacts.html">КОНТАКТЫ</a></b>
+                    </div>
+                    <div style="text-align: end;">
+                        <p>ИЗГОТОВЛЕНИЕ И МОНТАЖ МЕТАЛЛОКОНСТРУКЦИЙ ЛЮБОЙ СЛОЖНОСТИ В НОВОСИБИРСКЕ И ОБЛАСТИ Г. НОВОСИБИРСК, УЛ. ЧЕХОВА 421Б</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="scripts/func.js"></script>
+    </body>
+</html>

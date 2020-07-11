@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="https://nvsk.znavesov.ru/favicon.png">
+        <title>Цены на навесы в Новосибирске - Завод Навесов</title>
+        <style media="screen">
+            [type=radio] {
+              position: absolute;
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+
+            [type=radio] + img {
+              cursor: pointer;
+            }
+
+            [type=radio]:checked + img {
+              outline: 2px solid #ffe400;
+            }
+
+            #calc-table tr td, #price-t1 tr td, #price-t2 tr td{
+                padding: 10px;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            #calc-table tr:nth-child(1n), #price-t1 tr:nth-child(1n), #price-t2 tr:nth-child(1n){
+                background-color: #ffffff;
+            }
+
+            #calc-table tr:nth-child(2n), #price-t1 tr:nth-child(2n), #price-t2 tr:nth-child(2n){
+                background-color: #eeeeee;
+            }
+
+            #calc-table tr:first-child{
+                background-color: #ffe400;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="call-menu" style="position: fixed; background-color: rgba(1,1,1, 0.5); width: 100%; height: 1200px; z-index: 10;">
+            <div style="position: fixed; display: grid; background-color: white; padding: 30px; border-radius: 10px; z-index: 11;">
+                <div class="text-center pad-t-20 f-size-20"><b>Заказать звонок</b></div>
+                <div class="text-center pad-t-20"><p>Оставьте заявку и наш менеджер перезвонит Вам!</p></div>
+                <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case btn-nactive" placeholder="ваше имя" type="text"></div>
+                <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case btn-nactive" placeholder="ваш телефон" type="text"></div>
+                <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case" type="button" value="заказать звонок"></div>
+                <div class="just-center pad-t-20"><input type="checkbox"><span>Я согласен(а) с условиями передачи информации</span></div>
+            </div>
+        </div>
+        <div id="scroll-head" style="position: fixed; width: 100%; background-color: white; display: none; opacity: 0; transition: 0.3s; z-index: 1000;">
+            <div class="center-70 pad-t-10 pad-b-10">
+                <div id="scroll-head" style="display: grid;">
+                    <div>
+                        <div class="btn d-inline up-case form">Заказать звонок</div>
+                        <a href="price.html"><div class="btn d-inline up-case">Калькулятор</div></a>
+                    </div>
+                    <div id="scroll-call" class="just-end">
+                        <a href="tel:+73832841112" >
+                            <div style="display: grid; grid-template-columns: auto auto; grid-gap: 30px;">
+                                <div style="justify-self: end; align-self: center;">
+                                    <img src="https://nvsk.znavesov.ru/img/phone.svg" style="width: 30px;">
+                                </div>
+                                <div>
+                                    <div class="f-size-36"><b>+7 (383) 284-11-12</b></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="head">
+            <div id="head-top" class="center-70" style="padding-top: 30px;">
+                <a href="index.html">
+                    <div style="display: grid; grid-template-columns: auto auto; justify-content: start; grid-gap: 60px;">
+                        <div><img src="https://nvsk.znavesov.ru/img/logo.png" alt=""></div>
+                        <div style="align-self: center;">Изготовление и монтаж<br>металлоконструкций любой сложности<br>в Новосибирске и области</div>
+                    </div>
+                </a>
+                <div id="head-call">
+                    <div>
+                        <a href="tel:+73832841112" >
+                            <div style="display: grid; grid-template-columns: auto auto; grid-gap: 30px;">
+                                <div style="justify-self: end; align-self: center;">
+                                    <img src="https://nvsk.znavesov.ru/img/phone.svg" style="width: 30px;">
+                                </div>
+                                <div>
+                                    <div>Новосибирск</div>
+                                    <div class="f-size-36"><b>+7 (383) 284-11-12</b></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="btn-list">
+                        <div class="btn d-inline up-case form">Заказать звонок</div>
+                        <a href="price.html"><div class="btn d-inline up-case">Калькулятор</div></a>
+                    </div>
+                </div>
+            </div>
+            <div id="head-bot">
+                <div class="center-70">
+                    <div class="up-case d-inline"><a class="white-text" href="catalog.html">каталог металлоконструкций</a></div>
+                    <div class="up-case d-inline"><a class="white-text" href="price.html">цены на металлоконструкции</a></div>
+                    <div class="up-case d-inline"><a class="white-text" href="works.html">наши работы</a></div>
+                    <div class="up-case d-inline"><a class="white-text" href="thank.html">отзывы</a></div>
+                    <div class="up-case d-inline"><a class="white-text" href="contacts.html">контакты</a></div>
+                    <div class="phone" class="up-case d-inline"><b>+7 (383) 284-11-12</b></div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="center-70">
+                <div class="g-main">
+                    <div style="font-size: 44px; font-weight: 700; line-height: 58px; padding-top: 50px;" class="white-text">Делаем и устанавливаем металлоконструкции<br>любой сложности под ключ<br>с гарантией до 15 лет<br></div>
+                    <div id="wh" class="d-inline">Выезд замерщика в день обращения!</div>
+                    <div class="white-text" style="font-size: 22px; display: grid; grid-template-columns: 1fr 1fr 1fr;">
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Навесы</b><br>от 2 800 Р/шт
+                        </div>
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Беседки</b><br>от 2 500 Р/шт
+                        </div>
+
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Калитки</b><br>от 4 000 Р за 1,1 метр в длину
+                        </div>
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Забор</b><br>от 1 600 Р/пм
+                        </div>
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>Ворота распашные</b><br>3м от 15 000 Р
+                        </div>
+                        <div class="text-center marginr-50 pad-b-30">
+                            <b>3D забор</b><br>от 1 000 Р/пм
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="calc">
+                        <div class="calc-top white-text">
+                            <p class="text-center f-size-20" style="padding: 15px;">Получите <b class="yellow-text">ТОЧНЫЙ РАСЧЕТ</b> навеса</p>
+                            <p class="f-size-18" style="padding-bottom: 15px;">1. Оставьте свой номер телефона и наш специалист свяжется с Вами в течение 45 минут</p>
+                            <input style="justify-self: center; width: 100%;" type="text" placeholder="ВАШ ТЕЛЕФОН" class="bg-white btn d-inline up-case bordern">
+                            <div class="calc-option">
+                                <div class="option">
+                                    <div class="just-end"><div style="text-align: end;" class="pad-b-10">Длина: </div><input style="width: 100%;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                                </div>
+                                <div class="option">
+                                    <div class="just-end"><div style="text-align: end;" class="pad-b-10">Ширина: </div> <input style="width: 100%;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                                </div>
+                                <div class="option">
+                                    <div class="just-end"><div style="text-align: end;" class="pad-b-10">Высота: </div> <input style="width: 100%;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                                </div>
+                                <div class="option">
+                                    <div class="just-end"><div style="text-align: end;" class="pad-b-10">Крыша: </div>
+                                    <select class="btn bg-white bordern" style="width: 100%;">
+                                        <option value="поликарбонат">поликарбонат</option>
+                                        <option value="черепица">черепица</option>
+                                        <option value="мягкая кровля">мягкая кровля</option>
+                                        <option value="металлочерепица">металлочерепица</option>
+                                    </select>
+                                </div></div>
+                            </div>
+                            <input style="justify-self: center; margin-top: 30px; width: 100%;" type="button" value="ПОЛУЧИТЬ ПРОЕКТ И РАСЧЁТ" class="btn d-inline up-case">
+                        </div>
+                        <div class="calc-bot">
+                            <p class="f-size-18" style="padding-bottom: 15px;">2. <b class="red-text">БЕСПЛАТНО</b> к вам приедет инженер для уточнения конструкции и цвета навеса</p>
+                            <p class="f-size-18" style="padding-bottom: 15px;">3. <b class="red-text">БЕСПЛАТНО</b> отправим Вам наше коммерческое предложение с детальной сметой, 3D эскизов и стоимостью</p>
+                            <input type="checkbox"><span>Я согласен(а) с условиями передачи информации</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="center-70 pad-t-50 pad-b-50">
+                <div class="f-size-36 pad-b-30 text-center">
+                    <b>КАЛЬКУЛЯТОР НАВЕСОВ</b>
+                </div>
+                <div id="calc-block" style="display: grid; grid-gap: 50px; justify-content: center;">
+                    <div class="white-text text-center borderr-10" style="padding: 20px; background: linear-gradient(rgba(20,30,48,0.9) 0%,rgba(36,59,85,0.9) 100%); display: grid;">
+                        <div class="f-size-20"><b>Введите размеры навеса или беседки</b></div>
+                        <div class="calc-option">
+                            <div class="option">
+                                <div class="just-end">Длина: <input id="clength" style="width: 100px;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                            </div>
+                            <div class="option">
+                                <div class="just-end">Ширина: <input id="cwidth" style="width: 100px;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                            </div>
+                            <div class="option">
+                                <div class="just-end">Высота: <input id="cheight" style="width: 100px;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                            </div>
+                            <div class="option">
+                                <div class="just-end">Крыша:
+                                <select id="ctype" class="btn bg-white bordern">
+                                    <option value="Поликарбонат">Поликарбонат</option>
+                                    <option value="Черепица">Черепица</option>
+                                    <option value="Мягкая кровля">Мягкая кровля</option>
+                                    <option value="Металлочерепица">Металлочерепица</option>
+                                </select>
+                            </div></div>
+                        </div>
+                        <div class="pad-t-10 pad-b-10 f-size-20"><b>Выберите тип крыши Вашего навеса</b></div>
+                        <div class="just-center" style="padding: 3px; display: grid; grid-template-columns: 120px 120px 120px; grid-template-rows: 60px 60px 60px; grid-gap: 3px; justify-self: center; background-color: white;">
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/1.png" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/2.png" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/3.png" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/4.png" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/5.png" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/6.png" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/7.png" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/8.png" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://nvsk.znavesov.ru/img/calc/9.png" alt="">
+                            </label>
+                        </div>
+                        <div class="pad-t-10" style="width: calc(100% - 20px);"><input style="width: 100%;" onclick="calc();" type="button" value="рассчитать" class="btn up-case m-top"></div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="f-size-20 text-center pad-b-30"><p>Предварительный расчет стоимости</p></div>
+                        <div class="just-center">
+                            <table id="calc-table" cellspacing="0">
+                                <tr style="align-text: start; ">
+                                    <td style="border-radius: 5px 0px 0px 0px;"><b>Наименование</b></td>
+                                    <td><b>Кол-во</b></td>
+                                    <td style="border-radius: 0px 5px 0px 0px;"><b>Ед.из</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Металлические столбы 60х60</td>
+                                    <td id="tlogs">6</td>
+                                    <td>шт</td>
+                                </tr>
+                                <tr>
+                                    <td>Силовые боковые балки</td>
+                                    <td id="twall">2</td>
+                                    <td>шт</td>
+                                </tr>
+                                <tr>
+                                    <td>Ферма</td>
+                                    <td id="tfarm">5</td>
+                                    <td>шт</td>
+                                </tr>
+                                <tr>
+                                    <td>Лаги 40х20х2мм</td>
+                                    <td id="tlags">5</td>
+                                    <td>шт</td>
+                                </tr>
+                                <tr>
+                                    <td id="ttype">Поликарбонат</td>
+                                    <td id="tarea">0</td>
+                                    <td>м2</td>
+                                </tr>
+                                <tr>
+                                    <td>Соединительные профили</td>
+                                    <td id="tcar">1</td>
+                                    <td>к-т</td>
+                                </tr>
+                                <tr>
+                                    <td>Окрашивание грунтом</td>
+                                    <td id="tgro">0</td>
+                                    <td>м2</td>
+                                </tr>
+                                <tr>
+                                    <td>Итого</td>
+                                    <td id="tsum">0</td>
+                                    <td>руб</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-radius: 0px 0px 0px 5px;"><b>Со скидкой</b></td>
+                                    <td id="tnsum"><b>0</b></td>
+                                    <td style="border-radius: 0px 0px 5px 0px;"><b>руб</b></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case btn-nactive" type="text" placeholder="ваш телефон"></div>
+                        <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case" type="button" value="получить скидку"></div>
+                        <div class="just-center pad-t-20"><input type="checkbox"><span>Я согласен(а) с условиями передачи информации</span></div>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+        <div style="background-image: url('https://nvsk.znavesov.ru/img/proiz.jpg'); background-size: cover;">
+            <div class="center-70 pad-t-50 pad-b-50 white-text" style="display: grid;">
+                <div class="just-center f-size-36 pad-b-50"><b>ЦЕНЫ НА НАВЕСЫ</b></div>
+                <div id="pricelist-block" style="display: grid; grid-gap: 100px;">
+                    <div>
+                        <div class="text-center yellow-text f-size-20 pad-b-20"><b>Цены на отдельные виды работ и дополнительные услуги.</b></div>
+                        <div class="black-text">
+                            <table id="price-t1" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                    <td class="bg-yellow text-center" style="border-radius: 5px 5px 0px 0px;" colspan="3"><b>По типу материала</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Навес из поликарбоната</td>
+                                    <td>м2</td>
+                                    <td>от 2600 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес из профнастила</td>
+                                    <td>м2</td>
+                                    <td>от 2600 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес с мягкой кровлей</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес из черепицы</td>
+                                    <td>м2</td>
+                                    <td>от 2800 руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow text-center" colspan="3"><b>По месту назначения</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для автомобиля</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес над крыльцом</td>
+                                    <td>шт</td>
+                                    <td>от 5000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для террасы</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для беседки</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для мангала</td>
+                                    <td>м2</td>
+                                    <td>от 5000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для барбекю</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес над калиткой</td>
+                                    <td>м2</td>
+                                    <td>от 5000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для бассейна</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Качели с навесом</td>
+                                    <td>м2</td>
+                                    <td>от 10000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навесы на ворота</td>
+                                    <td>м2</td>
+                                    <td>от 2500 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес на дачу</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес к дому</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow text-center" colspan="3"><b>По форме</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Односкатный навес</td>
+                                    <td>м2</td>
+                                    <td>от 2600 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Двускатный навес</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Треугольный навес</td>
+                                    <td>м2</td>
+                                    <td>от 2700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Сферический навес</td>
+                                    <td>м2</td>
+                                    <td>от 2900 руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow text-center" colspan="3"><b>Отдельные группы</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Беседки</td>
+                                    <td>шт</td>
+                                    <td>от 12190 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Мангалы с крышей</td>
+                                    <td>шт</td>
+                                    <td>от 10000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Козырек над крыльцом</td>
+                                    <td>шт</td>
+                                    <td>от 5000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Усиленные навесы</td>
+                                    <td>м2</td>
+                                    <td>от 5000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-radius: 0px 0px 0px 5px;">Монтаж навесов</td>
+                                    <td>м2</td>
+                                    <td style="border-radius: 0px 0px 5px 0px;">от 250 руб</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-center yellow-text f-size-20 pad-b-20"><b>Цены на готовые навесы и беседки по типовым размерам</b></div>
+                        <div class="black-text">
+                            <table id="price-t2" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                    <td class="bg-yellow text-center" style="border-radius: 5px 5px 0px 0px;" colspan="3"><b>Беседки из поликарбоната</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Беседка 3х3</td>
+                                    <td>м</td>
+                                    <td>от 25 200 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Беседка 4х4</td>
+                                    <td>м</td>
+                                    <td>от 44 800 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Беседка 5х5</td>
+                                    <td>м</td>
+                                    <td>от 70 000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Беседка 6х6</td>
+                                    <td>м</td>
+                                    <td>от 99 800 руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow text-center" colspan="3"><b>Навесы Для авто</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для авто 3х4</td>
+                                    <td>м</td>
+                                    <td>от 33 700 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для авто 3,5х4</td>
+                                    <td>м</td>
+                                    <td>от 39 200 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для авто 4х4</td>
+                                    <td>м</td>
+                                    <td>от 44 800 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для авто 4х5</td>
+                                    <td>м</td>
+                                    <td>от 56 000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для авто 4х5,5</td>
+                                    <td>м</td>
+                                    <td>от 61 600 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для авто 3х6</td>
+                                    <td>м</td>
+                                    <td>от 50 400 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для авто 4х6</td>
+                                    <td>м</td>
+                                    <td>от 67 200 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для 2 авто 3х8,2</td>
+                                    <td>м</td>
+                                    <td>от 68 880 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для 2 авто 4х8,2</td>
+                                    <td>м</td>
+                                    <td>от 91 840 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для 2 авто 6х5</td>
+                                    <td>м</td>
+                                    <td>от 84 000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для 2 авто 5х8,2</td>
+                                    <td>м</td>
+                                    <td>114 800 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Навес для 2 авто 5,5х8,2</td>
+                                    <td>м</td>
+                                    <td>126 280 руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow text-center" colspan="3"><b>Козырьки для двери</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Козырек 2х2</td>
+                                    <td>м</td>
+                                    <td>от 11 200 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Козырек 2х3</td>
+                                    <td>м</td>
+                                    <td>от 16 200 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Козырек 3х4</td>
+                                    <td>м</td>
+                                    <td>от 33 600 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Козырек 4х2</td>
+                                    <td>м</td>
+                                    <td>от 22 400 руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow text-center" colspan="3"><b>Для мангала и барбекю</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Для мангала 2х1</td>
+                                    <td>м</td>
+                                    <td>от 5 600 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Для мангала 3х1</td>
+                                    <td>м</td>
+                                    <td>от 8 400 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Для барбекю 5х2</td>
+                                    <td>м</td>
+                                    <td>от 28 000 руб</td>
+                                </tr>
+                                <tr>
+                                    <td>Для барбекю 4х2</td>
+                                    <td>м</td>
+                                    <td>от 22 400 руб</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-radius: 0px 0px 0px 5px;">Для барбекю 7х2</td>
+                                    <td>м</td>
+                                    <td style="border-radius: 0px 0px 5px 0px;">от 39 200 руб</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div>
+            <div class="center-70 pad-t-50 pad-b-50">
+                <div class="f-size-36 pad-b-30 text-center">
+                    <b>КАЛЬКУЛЯТОР ОГРАЖДЕНИЙ</b>
+                </div>
+                <div id="calc-block" style="display: grid; grid-gap: 50px; justify-content: center;">
+                    <div class="white-text text-center borderr-10" style="padding: 20px; background: linear-gradient(rgba(20,30,48,0.9) 0%,rgba(36,59,85,0.9) 100%); display: grid;">
+                        <div class="f-size-20"><b>Введите желаемые размеры ограждения</b></div>
+                        <div class="calc-option">
+                            <div class="option">
+                                <div class="just-end">Длина: <input id="flength" style="width: 100px;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                            </div>
+                            <div class="option">
+                                <div class="just-end">Ширина: <input id="fwidth" style="width: 100px;" class="btn bg-white bordern" type="text" placeholder="5 метров"></div>
+                            </div>
+                        </div>
+                        <div class="pad-t-10 pad-b-10 f-size-20"><b>Выберите тип ограждения</b></div>
+                        <div class="just-center" style="padding: 3px; display: grid; grid-template-columns: 120px 120px 120px; grid-template-rows: 60px 60px 60px; grid-gap: 3px; justify-self: center; background-color: white;">
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="1">
+                                <img src="https://konsport.com.pl/pliki/panel-3D-min.png" style="width: 120px; height: 50px;" alt="">
+                            </label>
+                        </div>
+                        <div class="pad-t-10" style="width: calc(100% - 20px);"><input style="width: 100%;" onclick="fcalc();" type="button" value="рассчитать" class="btn up-case m-top"></div>
+                    </div>
+                    <div style="display: grid;">
+                        <div class="f-size-20 text-center pad-b-30"><p>Предварительный расчет стоимости</p></div>
+                        <div class="just-center">
+                            <table id="calc-table" cellspacing="0">
+                                <tr style="align-text: start; ">
+                                    <td style="border-radius: 5px 0px 0px 0px;"><b>Наименование</b></td>
+                                    <td><b>Кол-во</b></td>
+                                    <td style="border-radius: 0px 5px 0px 0px;"><b>Ед.из</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Металлические столбы 60х60</td>
+                                    <td id="ftlogs">6</td>
+                                    <td>шт</td>
+                                </tr>
+                                <tr>
+                                    <td>Длина</td>
+                                    <td id="ftlength">0</td>
+                                    <td>м</td>
+                                </tr>
+                                <tr>
+                                    <td>Ширина</td>
+                                    <td id="ftwidth">0</td>
+                                    <td>м</td>
+                                </tr>
+                                <tr>
+                                    <td>Площадь</td>
+                                    <td id="ftplace">0</td>
+                                    <td>м2</td>
+                                </tr>
+                                <tr>
+                                    <td>Итого</td>
+                                    <td id="ftsum">0</td>
+                                    <td>руб</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-radius: 0px 0px 0px 5px;"><b>Со скидкой</b></td>
+                                    <td id="ftnsum"><b>0</b></td>
+                                    <td style="border-radius: 0px 0px 5px 0px;"><b>руб</b></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case btn-nactive" type="text" placeholder="ваш телефон"></div>
+                        <div style="width: 100%;" class="just-center pad-t-20"><input style="width: 100%;" class="btn up-case" type="button" value="получить скидку"></div>
+                        <div class="just-center pad-t-20"><input type="checkbox"><span>Я согласен(а) с условиями передачи информации</span></div>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+        <div>
+            <div class="center-70 pad-t-50 pad-b-50" style="display: grid;">
+                <div class="just-center f-size-36 pad-b-10 text-center"><p>Сертификаты на нашу продукцию</p></div>
+                <div id="docs-block" class="pad-t-20 pad-b-20" style="display: grid; justify-content: center; grid-gap: 40px;">
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/sertif/sert1.jpg" style="width: 100%;"></div>
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/sertif/sert2.jpg" style="width: 100%;"></div>
+                    <div><img class="yellowb" src="https://nvsk.znavesov.ru/images/sertif/sert3.jpg" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+        <div style="background: url('https://nvsk.znavesov.ru/img/quest.jpg'); background-size: cover;">
+            <div class="center-70 white-text pad-t-50 pad-b-50" style="display: grid;">
+                <div id="quest-block" class="just-center">
+                    <div class="text-center f-size-36 pad-b-20 text-center"><b>Остались вопросы?</b></div>
+                    <div class="just-center text-center pad-b-20"><p>Введите свой вопрос и через 15 минут<br>с Вами свяжется наш специалист</p></div>
+                    <div style="width: 100%;" class="just-center pad-b-20"><textarea style="resize: none; width: 100%;" class="btn bg-white bordern up-case" cols="30" rows="10" placeholder="ваш вопрос"></textarea></div>
+                    <div style="width: 100%;" class="just-center pad-b-20"><input style="width: 100%;" class="btn bg-white bordern up-case" type="text" placeholder="ваш телефон"></div>
+                    <div style="width: 100%;" class="just-center pad-b-20"><input style="width: 100%;" class="btn up-case" type="button" value="задать вопрос!"></div>
+                    <div class="just-center pad-b-20"><input type="checkbox"><span>Я согласен(а) с условиями передачи информации</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="foot" style="background-color: #1e2a3a;">
+            <div class="center-70 white-text pad-t-50 pad-b-50">
+                <div id="foot-block" style="display: grid; grid-gap: 30px;">
+                    <div>
+                        <b>ИЗГОТОВЛЕНИЕ И МОНТАЖ МЕТАЛЛОКОНСТРУКЦИЙ</b>
+                        <p class="pad-b-20 pad-t-20">ВНИМАНИЕ! ДАННЫЙ САЙТ НОСИТ ИНФОРМАЦИОННЫЙ ХАРАКТЕР И НИ ПРИ КАКИХ УСЛОВИЯХ НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ, КОТОРАЯ ОПРЕДЕЛЯЕТСЯ ПОЛОЖЕНИЯМИ СТАТЬИ 437 (2) ГРАЖДАНСКОГО КОДЕКСА РФ. ДЛЯ ПОЛУЧЕНИЯ ПОДРОБНОЙ ИНФОРМАЦИИ О НАЛИЧИИ И СТОИМОСТИ УКАЗАННЫХ ТОВАРОВ И (ИЛИ) УСЛУГ, ПОЖАЛУЙСТА, ОБРАЩАЙТЕСЬ К НАШИМ МЕНЕДЖЕРАМ. ИЛИ МЫ САМИ СВЯЖЕМСЯ С ВАМИ.</p>
+                        <p>(C) ЗАВОД НАВЕСОВ 2002 - 2018</p>
+                    </div>
+                    <div class="ln-3">
+                        <b><a href="workauto.html">ДЛЯ АВТОМОБИЛЯ</a><br>
+                        <a href="workgazebo.html">ДЛЯ БЕСЕДКИ</a><br>
+                        <a href="workmetal.html">КОВАННЫЕ НАВЕСЫ</a><br>
+                        <a href="workbarbecue.html">ДЛЯ БАРБЕКЮ</a><br>
+                        <a href="workswing.html">ДЛЯ КАЧЕЛЕЙ</a><br>
+                        <a href="workhouse.html">К ДОМУ</a><br>
+                        <a href="workterrace.html">ДЛЯ ТЕРРАСЫ</a><br>
+                        <a href="workpark.html">БЕСЕДКИ</a><br>
+                        <a href="workpool.html">ДЛЯ БАССЕЙНА</a><br>
+                        <a href="workfence.html">ОГРАЖДЕНИЯ</a></b>
+                    </div>
+                    <div class="ln-3">
+                        <b class="up-case"><a href="price.html">цены на металлоконструкции</a><br>
+                        <a href="works.html">НАШИ РАБОТЫ</a><br>
+                        <a href="thank.html">ОТЗЫВЫ</a><br>
+                        <a href="contacts.html">КОНТАКТЫ</a></b>
+                    </div>
+                    <div style="text-align: end;">
+                        <p>ИЗГОТОВЛЕНИЕ И МОНТАЖ МЕТАЛЛОКОНСТРУКЦИЙ ЛЮБОЙ СЛОЖНОСТИ В НОВОСИБИРСКЕ И ОБЛАСТИ Г. НОВОСИБИРСК, УЛ. ЧЕХОВА 421Б</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="scripts/func.js"></script>
+    </body>
+</html>
